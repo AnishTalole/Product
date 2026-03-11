@@ -107,7 +107,7 @@ const Dashboard = () => {
                                         <div className="flex items-center gap-4">
                                             <div className="w-12 h-12 bg-slate-100 rounded-full flex-shrink-0 overflow-hidden border-2 border-white shadow-sm">
                                                 <img 
-                                                    src={`http://localhost:5000/uploads/profiles/${doc.profileImage}`} 
+                                                    src={`https://my-product-app-backend-opfu.onrender.com/uploads/profiles/${doc.profileImage}`} 
                                                     alt={doc.name} 
                                                     className="w-full h-full object-cover"
                                                 />
@@ -134,13 +134,13 @@ const Dashboard = () => {
                                     <td className="px-6 py-5 text-center">
                                         <div className="flex justify-center">
                                             <a 
-                                                href={`http://localhost:5000/uploads/qrcodes/${doc.qrCodePath}`} 
+                                                href={`https://my-product-app-backend-opfu.onrender.com/uploads/qrcodes/${doc.qrCodePath}`} 
                                                 download={`${doc.name.replace(/\s+/g, '_')}_QR.png`}
                                                 className="relative group block cursor-pointer"
                                                 title="Click to download QR"
                                             >
                                                 <img 
-                                                    src={`http://localhost:5000/uploads/qrcodes/${doc.qrCodePath}`} 
+                                                    src={`https://my-product-app-backend-opfu.onrender.com/uploads/qrcodes/${doc.qrCodePath}`} 
                                                     alt="QR" 
                                                     className="w-14 h-14 rounded-lg border border-slate-200 group-hover:opacity-50 transition-all"
                                                 />

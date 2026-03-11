@@ -3,8 +3,8 @@ import { Document, Page, Text, View, Image, Link } from '@react-pdf/renderer';
 import { styles } from './CardPDFStyles';
 
 const CardPDF = ({ data }) => {
-    const iconBase = "http://localhost:5000/icons/";
-    const uploadBase = "http://localhost:5000/uploads/";
+    const iconBase = "https://my-product-app-backend-opfu.onrender.com/icons/";
+    const uploadBase = "https://my-product-app-backend-opfu.onrender.com/uploads/";
 
     return (
         <Document title={`${data.name} Profile`}>

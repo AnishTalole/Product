@@ -152,7 +152,7 @@ const EditProfile = () => {
                             <label className="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-2">Profile Photo</label>
                             {formData.profileImage ? (
                                 <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-xl border-4 border-white group">
-                                    <img src={`http://localhost:5000/uploads/profiles/${formData.profileImage}`} className="w-full h-full object-cover" />
+                                    <img src={`https://my-product-app-backend-opfu.onrender.com/uploads/profiles/${formData.profileImage}`} className="w-full h-full object-cover" />
                                     <button type="button" onClick={() => handleServerDelete('profileImage', formData.profileImage, 'profiles')} className="absolute inset-0 bg-red-600/90 text-white flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all font-bold text-[10px]">
                                         <Trash2 size={20} /> DELETE
                                     </button>
@@ -172,7 +172,7 @@ const EditProfile = () => {
                             <label className="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-2">QR Center Logo</label>
                             {formData.qrLogo ? (
                                 <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-xl border-4 border-white group">
-                                    <img src={`http://localhost:5000/uploads/logos/${formData.qrLogo}`} className="w-full h-full object-cover" />
+                                    <img src={`https://my-product-app-backend-opfu.onrender.com/uploads/logos/${formData.qrLogo}`} className="w-full h-full object-cover" />
                                     <button type="button" onClick={() => handleServerDelete('qrLogo', formData.qrLogo, 'logos')} className="absolute inset-0 bg-red-600/90 text-white flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all font-bold text-[10px]">
                                         <Trash2 size={20} /> DELETE
                                     </button>

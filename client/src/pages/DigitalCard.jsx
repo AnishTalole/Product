@@ -51,7 +51,7 @@ const DigitalCard = () => {
     if (loading) return <div className="flex justify-center items-center h-screen">Loading...</div>;
     if (!doc) return <div className="text-center mt-20 font-bold">Profile Not Found</div>;
 
-    const profileImg = `http://localhost:5000/uploads/profiles/${doc.profileImage}`;
+    const profileImg = `https://my-product-app-backend-opfu.onrender.com/uploads/profiles/${doc.profileImage}`;
 
     return (
         <div className="max-w-md mx-auto bg-white min-h-screen shadow-lg font-sans pb-10">
